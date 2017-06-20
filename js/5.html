@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jq/jquery-3.2.1.js"></script>
+    <script>
+        $(function () {
+            $('tr:even').css("background",'red');
+            $('tr:odd').css("background",'#fcc');
+            $('tr:first').css("background",'#fcf');
+
+        })
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th width="100">A</th>
+            <th width="200">B</th>
+            <th width="300">C</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+</body>
+</html>

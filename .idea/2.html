@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function checkForm() {
+            var name = document.getElementById('name').value;
+            console.log(name);
+            if (!/^[\u4e00-\u9fbb]{2,4}$/.test(name)) {
+                alert('name...');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+<form action="http://bing.com" method="post" onsubmit="return checkForm() ">
+    <input type="text" name="name" placeholder="姓名">* (中文)<br>
+    <input tape="password" name="password" placeholder="密码">*(>=6)<br>
+    <input type="text" name="age" placeholder="年龄"> * (number)<br>
+    <input type="text" name="email" placeholder="邮件"> * (合法邮箱地址)<br>
+    <input type="text" name="dob" placeholder="出生日期"> * (yyyy-MM-dd)<br>
+    <input type="submit" value="注册">
+
+</form>
+</body>
+</html>
